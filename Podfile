@@ -1,8 +1,8 @@
 platform :ios, '8.0'
 use_frameworks!
-project 'xcode7ObjectiveC.xcodeproj'
+project 'Xcode8HelloWorld.xcodeproj'
 
-target 'xcode7ObjectiveC' do
+target 'Xcode8HelloWorld' do
   pod 'AFNetworking', '~> 2.6'
   pod 'ORStackView', '~> 3.0'
   pod 'SwiftyJSON', '~> 2.3'
