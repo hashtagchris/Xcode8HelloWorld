@@ -7,6 +7,9 @@ pool:
   vmImage: 'macOS 10.13'
 
 steps:
+- task: CocoaPods@0
+- script: find . -name *.pbxproj
+- script: cat ./Pods/Pods.xcodeproj/project.pbxproj
 - task: Xcode@5
   inputs:
     actions: 'build'
