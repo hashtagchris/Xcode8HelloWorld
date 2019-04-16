@@ -10,7 +10,7 @@ end
 
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|
-        config.build_settings.add('CODE_SIGNING_ALLOWED', 'NO')
-        config.build_settings.add('CODE_SIGNING_REQUIRED', 'NO')
+        config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+        config.build_settings['CODE_SIGNING_REQUIRED'] = 'NO'
     end
 end
