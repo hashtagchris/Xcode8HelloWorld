@@ -8,6 +8,9 @@ pool:
 
 steps:
 - task: CocoaPods@0
+- script: |
+    cd AFNetworking
+    ls -la
 - task: Xcode@5
   inputs:
     actions: 'build'
